@@ -15,18 +15,25 @@ async function sendApiRequest(){
   let data=await response.json()
   console.log(response)
   useApiData(data)
+
 }
 
 
 //function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
 function useApiData(data){
-document.querySelector("#content").innerHTML= `
+  for (var i = 0; i < data.hits.length; i++) {
+
+document.querySelector("#content").innerHTML+=`
 <div class="card" style="width: 18rem;">
-  <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
+  <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">${data.hits[0].recipe.label}</h5>
-    <p class="card-text">${data.hits[0].recipe.healthLabels}</p>
-    <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Source</a>
+    <h5 class="card-title">${data.hits[i].recipe.label}</h5>
+    <p class="card-text">${data.hits[i].recipe.healthLabels}</p>
+    <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Source</a>
   </div>
-</div> `
+</div>
+
+`
+}
+
 }
