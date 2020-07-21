@@ -9,9 +9,10 @@ searchButton.addEventListener("click", ()=>{
 
 //An asynchronous function to fetch data from the API.
 async function sendApiRequest(){
+  var input=document.getElementById('inputid');
   let APP_ID="2afa29fc";
   let API_KEY="3063fe6d505174b0306c307e4268fe78";
-  let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=pizza`);
+  let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=`+input.value);
   let data=await response.json()
   console.log(response)
   useApiData(data)
