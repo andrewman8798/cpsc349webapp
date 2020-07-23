@@ -16,8 +16,9 @@ async function sendApiRequest(){
   let data=await response.json()
   console.log(response)
   useApiData(data)
-
 }
+
+
 
 
 //function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
