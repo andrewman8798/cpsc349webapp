@@ -32,10 +32,16 @@ h1, h2, h3, h4, h5, h6 {
 <!--     The form     -->
 
     <!-- Search bar-->
-    <form class="example" action="search.html">
-    <input type="text" placeholder="Search.." name="search"> <button> Search </button>
+    <!--form class="example" action="search.html"-->
+    <input type="text" id="inputid" placeholder="Search.." name= search> <button id="search"> Search </button>
     </form>
     <!-- end of search  bar -->
+      
+        <h1></h1>
+
+        <script>
+            document.querySelector("h1").innerHTML = window.location.search.substring(1);
+        </script>
 
 	<div class="results">
 		<p>SEARCH RESULTS</p>
