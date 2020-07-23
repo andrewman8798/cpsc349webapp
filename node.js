@@ -29,7 +29,10 @@ document.querySelector("#content").innerHTML+=`
   <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${data.hits[i].recipe.label}</h5>
-    <p class="card-text">${data.hits[i].recipe.healthLabels}</p>
+    <p class="card-text">${data.hits[i].recipe.healthLabels}
+    <br> Calories:
+${data.hits[i].recipe.calories}
+    </p>
     <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Source</a>
   </div>
 </div>
