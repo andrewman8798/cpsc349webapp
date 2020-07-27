@@ -12,11 +12,22 @@ async function sendApiRequest(){
   //moving user input into the search query
   var input=document.getElementById('inputid');
   //add filter otptions here then append to end of query with "+"
-  var filter=document.getElementById('filterid');
+//looking for way to add filter through checkbox
+//right now all filters are activated
+  var filter1=document.getElementById('filter1');
+  var filter2=document.getElementById('filter2');
+  var filter3=document.getElementById('filter3');
+  var filter4=document.getElementById('filter4');
+  var filter5=document.getElementById('filter5');
+  var filter6=document.getElementById('filter6');
+  var filter7=document.getElementById('filter7');
+  var filter8=document.getElementById('filter8');
+  var filter9=document.getElementById('filter9');
+  var filter10=document.getElementById('filter10');
   let APP_ID="2afa29fc";
   let API_KEY="3063fe6d505174b0306c307e4268fe78";
 
-  let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=`+input.value);
+  let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=`+input.value+filter1.value+filter2.value+filter3.value+filter4.value+filter5.value+filter6.value+filter7.value+filter8.value+filter9.value+filter10.value);
 
   let data=await response.json()
   console.log(response)
