@@ -53,9 +53,8 @@ form.example::after {
   font-size: 300%;
   text-align: center;
 }
+.resultnum{
 
-h5{
-
-  font-family: "Sofia";
-    font-size: 22px;
+  font-size: 150%;
+  text-align: center;
 }

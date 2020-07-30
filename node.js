@@ -136,6 +136,7 @@ document.querySelector("#content").innerHTML+=`
     <pre class="tab"></pre>
 
 `
+document.querySelector("#resultnum").innerHTML=`<p>Number of Results: </p>${data.hits.length}`
 
 }
 
