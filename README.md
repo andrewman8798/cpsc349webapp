@@ -1,6 +1,6 @@
 # cpsc349webapp </br>
 
-Contributers:
+Contributors:
 # Andrew Ta andrewman8798@csu.fullerton.edu </br>
 # Moustapha Said mstfa.said@csu.fullerton.edu
 # Samprayash Dahal sdahal@csu.fullerton.edu
