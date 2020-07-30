@@ -111,6 +111,7 @@ if(stringsum!==undefined){
 
 //function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
 function useApiData(data){
+
   for (var i = 0; i < data.hits.length; i++) {
 
 document.querySelector("#content").innerHTML+=`
