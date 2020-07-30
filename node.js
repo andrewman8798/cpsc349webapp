@@ -83,6 +83,7 @@ var data = [stringsum1, stringsum2, stringsum3, stringsum4, stringsum5, stringsu
 data = data.filter(function( element ) {
    return element !== undefined;
 });
+//this loop adds all the filters into one string ready to be inserted into the query
 for(var i=0; i<data.length;i++){
    final+=data[i].value;
 }
