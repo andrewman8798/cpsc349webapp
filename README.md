@@ -4,8 +4,8 @@ Contributers:
 # Andrew Ta andrewman8798@csu.fullerton.edu </br>
 # Moustapha Said mstfa.said@csu.fullerton.edu
 # Samprayash Dahal sdahal@csu.fullerton.edu
-# gonzalo plascencia gonzalo_p@csu.fullerton.edu
-# Eric van der Roestericjvdr@csu.fullerton.edu
+# Gonzalo Plascencia gonzalo_p@csu.fullerton.edu
+# Eric van der Roest ericjvdr@csu.fullerton.edu
 
 
 Our project is called Recipes Galore. It is a website that uses a data base to show results of the desired search recipe. Out webpage uses Edamame API the look up the results and the whole webpage is powered by W3school for the CSS and styling.
